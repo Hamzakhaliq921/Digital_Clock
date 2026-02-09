@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Clock</title>
+  <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+      <h1 class="clock-heading">Digital Clock</h1>
+
+  <div id="clock">00:00:00</div>
+  <div class="set-time">
+    <input type="number" id="h" placeholder="HH" min="0" max="23">
+    <input type="number" id="m" placeholder="MM" min="0" max="59">
+    <input type="number" id="s" placeholder="SS" min="0" max="59">
+    <button onclick="setTime()">Set Time</button>
+    <button onclick="ResetTime()">Reset Time</button>
+    <button onclick="setZeroTime()">Set 00:00:00</button>
+    <button onclick="resume()">Resume</button>
+    <button onclick="stop()">Stop</button>
+  </div>
+  <script src="clock.js"></script>
+</body>
+</html>
